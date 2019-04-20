@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../unit-4-game/assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../unit-4-game/assets/css/style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <div style="background: rgb(54, 168, 54)" class="card">
+        <div class="card-body">
+            <h1>Crystals Collector</h1>
+        </div>
+    </div>
+    <div style="background: tan" class="card">
+        <div class="card-body">
+            You will be given a random number at the start of the game. <br><br>
+            There are four crystals below. By clicking on a crystal you will add a specific amount of points to your
+            total score. <br><br>
+            You win the game by matching your total score to the random number, you lose the game if your total score
+            goes above the random number. <br><br>
+            The value of each crystal is hidden from you until you click on it. <br><br>
+            Each time when the game starts, the game will change the values of each crystal.
+        </div>
+    </div>
+    <div style="background: rgb(233, 122, 19);width: 25%;" class="card float-left">
+        <div class="card-body">
+            <h2>
+                <script type="text/javascript">
+                    document.write(targetnum)
+                </script>
+            </h2>
+        </div>
+    </div>
+    <div style="background: rgb(48, 166, 182);width: 25%;" class="card">
+        <div class="card-body">
+            <p>Wins:
+                <script type="text/javascript">
+                    document.write(wins)
+                </script>
+            </p>
+            <p>Losses:
+                <script type="text/javascript">
+                    document.write(losses)
+                </script>
+            </p>
+        </div>
+    </div>
+    <img id="bluecrystal" src="../unit-4-game/assets/images/bluecrystal.jpg" style="width: 10%" class="rounded"
+        alt="bluecrystal">
+    <img id="redcrystal" src="../unit-4-game/assets/images/redcrystal.jpg" style="width: 10%" class="rounded"
+        alt="redcrystal">
+    <img id="greencrystal" src="../unit-4-game/assets/images/greencrystal.jpg" style="width: 10%" class="rounded"
+        alt="greencrystal">
+    <img id="pinkcrystal" src="../unit-4-game/assets/images/pinkcrystal.jpg" style="width: 10%" class="rounded"
+        alt="pinkcrystal">
+    <div style="background: rgb(48, 166, 182);width: 25%;" class="card">
+        <div class="card-body">
+            <p>Running total:<br>
+                <script type="text/javascript">
+                    document.write(runtotal)
+                </script>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
