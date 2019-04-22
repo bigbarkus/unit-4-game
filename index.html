@@ -18,12 +18,12 @@
     <script type="text/javascript" src="assets/javascript/game.js"></script>
     <div style="background: rgb(54, 168, 54)" class="card">
         <div class="card-body">
-            <h1>Crystals Collector</h1>
+            <h1>Crystal Collector</h1>
         </div>
     </div>
     <div style="background: tan" class="card">
         <div class="card-body">
-            You will be given a random number at the start of the game. <br><br>
+            You will be given a random number at the start of the game when you click a crystal. <br><br>
             There are four crystals below. By clicking on a crystal you will add a specific amount of points to your
             total score. <br><br>
             You win the game by matching your total score to the random number, you lose the game if your total score
@@ -34,25 +34,19 @@
     </div>
     <div style="background: rgb(233, 122, 19);width: 25%;" class="card float-left">
         <div class="card-body">
-            <h2>
-                <script type="text/javascript">
-                    document.write(targetnum)
-                </script>
-            </h2>
+            Target number:
+            <p id="targetnum"></p>
+
         </div>
     </div>
     <div style="background: rgb(48, 166, 182);width: 25%;" class="card">
         <div class="card-body">
             <p>Wins:
-                <script type="text/javascript">
-                    document.write(wins)
-                </script>
+                <p id="wins"></p>
             </p>
             <p>Losses:
-                <script type="text/javascript">
-                    document.write(losses)
-                </script>
-            </p>
+                <p id="losses">
+                </p>
         </div>
     </div>
     <img id="bluecrystal" src="../unit-4-game/assets/images/bluecrystal.jpg" style="width: 10%" class="rounded"
@@ -66,9 +60,7 @@
     <div style="background: rgb(48, 166, 182);width: 25%;" class="card">
         <div class="card-body">
             <p>Running total:<br>
-                <script type="text/javascript">
-                    document.write(runtotal)
-                </script>
+                <p id="runtotal"></p>
             </p>
         </div>
     </div>
